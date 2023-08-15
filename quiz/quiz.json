@@ -1,0 +1,102 @@
+[
+    {
+      "id": 1,
+      "question": "In JavaScript, which type of scope defines the accessibility of a variable within a specific function?",
+      "answers": [
+        {"answer": "Local scope", "isCorrect": true},
+        {"answer": "Global scope", "isCorrect": false},
+        {"answer": "Block scope", "isCorrect": false},
+        {"answer": "Function scope", "isCorrect": false}
+      ]
+    },
+    {
+      "id": 2,
+      "question": "What will the following code output?\n\nconsole.log(2 + '2');",
+      "answers": [
+        {"answer": "'22'", "isCorrect": true},
+        {"answer": "4", "isCorrect": false},
+        {"answer": "22", "isCorrect": false},
+        {"answer": "NaN", "isCorrect": false}
+      ]
+    },
+    {
+        "id": 3,
+        "question": "What does 'DOM' stand for?",
+        "answers": [
+          {"answer": "Document Object Model", "isCorrect": true},
+          {"answer": "Data Object Model", "isCorrect": false},
+          {"answer": "Dynamic Object Model", "isCorrect": false},
+          {"answer": "Display Order Model", "isCorrect": false}
+        ]
+      },
+      {
+        "id": 4,
+        "question": "Which function is used to parse a JSON string in JavaScript?",
+        "answers": [
+          {"answer": "parseJSON", "isCorrect": false},
+          {"answer": "JSON.parse", "isCorrect": true},
+          {"answer": "stringifyJSON", "isCorrect": false},
+          {"answer": "JSON.stringify", "isCorrect": false}
+        ]
+      },
+      {
+        "id": 5,
+        "question": "What is the correct syntax to add an event listener to an element?",
+        "answers": [
+          {"answer": "element.addEventListener('click', myFunction);", "isCorrect": true},
+          {"answer": "myFunction.addEventListener('click', element);", "isCorrect": false},
+          {"answer": "element.attachEvent('click', myFunction);", "isCorrect": false},
+          {"answer": "addEventListener(element, 'click', myFunction);", "isCorrect": false}
+        ]
+      },
+      {
+        "id": 6,
+        "question": "Which loop is used for iterating over the properties of an object?",
+        "answers": [
+          {"answer": "for loop", "isCorrect": false},
+          {"answer": "while loop", "isCorrect": false},
+          {"answer": "for...of loop", "isCorrect": false},
+          {"answer": "for...in loop", "isCorrect": true}
+        ]
+      },
+      {
+        "id": 7,
+        "question": "What does 'AJAX' stand for?",
+        "answers": [
+          {"answer": "Asynchronous JavaScript and XML", "isCorrect": true},
+          {"answer": "Advanced JavaScript and XML", "isCorrect": false},
+          {"answer": "Asynchronous JSON and XML", "isCorrect": false},
+          {"answer": "Active JavaScript and XML", "isCorrect": false}
+        ]
+      },
+      {
+        "id": 8,
+        "question": "Which method is used to remove the last element from an array in JavaScript?",
+        "answers": [
+          {"answer": "pop()", "isCorrect": true},
+          {"answer": "push()", "isCorrect": false},
+          {"answer": "shift()", "isCorrect": false},
+          {"answer": "unshift()", "isCorrect": false}
+        ]
+      },
+      {
+        "id": 9,
+        "question": "What is the result of typeof null?",
+        "answers": [
+          {"answer": "object", "isCorrect": true},
+          {"answer": "null", "isCorrect": false},
+          {"answer": "undefined", "isCorrect": false},
+          {"answer": "string", "isCorrect": false}
+        ]
+      },
+      {
+        "id": 10,
+        "question": "Which method is used to convert a string to uppercase in JavaScript?",
+        "answers": [
+          {"answer": "toUpperCase()", "isCorrect": true},
+          {"answer": "toLowerCase()", "isCorrect": false},
+          {"answer": "toUpperCasecase()", "isCorrect": false},
+          {"answer": "toUppercase()", "isCorrect": false}
+        ]
+      }
+    ]
