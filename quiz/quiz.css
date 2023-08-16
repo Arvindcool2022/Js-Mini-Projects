@@ -1,37 +1,71 @@
+:root {
+    font-size: 16px;
+}
+
+*{
+    box-sizing: border-box;
+}
+
 body {
-    background-image:linear-gradient(45deg,#339946,#339699);
+    background: linear-gradient(-45deg, #c7ee52, #3ce77e, #23a6d5, #23d5ab);
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: "Open Sans", sans-serif;
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+}
+
+@keyframes gradient {
+  0% {
+      background-position: 0% 50%;
   }
-  
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
   .container {
     width: 800px;
-    height: 500px;
+    height: 550px;
     background-color:rgba(255, 255, 255, 0.65);
     position: relative;
     border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
   }
-  
-  
+    
   .content{
     padding: 50px;
   }
+  .error {
+    position: absolute;
+    bottom: 50px;
+    left: 20px;
+    display: none;
+    color: red;
+    font-size: 1rem;
+    font-weight: 700;
+  }
   
   .question{
-    font-size: 40px;
+    font-size: 2rem;
   }
   
   .answer{
-    font-size: 24px;
-    margin-bottom: 20px;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
     color: #333;
+    font-weight: 500;
   }
   
   .submit{
-    background-image:linear-gradient(90deg,#222463,#1b4eb4);
-    color: white;
+    background: linear-gradient(90deg, #ff7070, #ffe53c 51%, #ff9970) 0/200%;
+    color: #333;
+    text-transform: uppercase;
     border: none;
     width: 100%;
     height: 50px;
@@ -40,30 +74,49 @@ body {
     bottom: 0;
     border-bottom-right-radius: 12px;
     border-bottom-left-radius: 12px;
-  }
+    font-size: 1.25rem;
+    transition: all 1s ease;
+}
+
+.submit:hover,
+.play:hover {
+    background-position: 100% 0;
+}
+
+  /* .game {
+      display: none;
+    } */
+    
+    .result {
+        display: none;
+        padding: 50px;
+        text-align: center;
+    }
   
-  .result {
-    display: none;
-    padding: 50px;
-    text-align: center;
-  }
-  
-  .result h1{
+    .result h1{
     font-size: 50px;
-  }
+}
+.result p{
+    opacity: 0.5;
+    font-size: .75rem; 
+    margin-top: -1rem;
+    margin-bottom: 3rem;
+}
   
-  .correct{
-    color: #00ff00;
-  }
-  
-  .wrong{
+.correct{
+    color: #00aa00;
+}
+
+.wrong{
     color: #ff1d1d;
   }
   
   .play{
-    color: white;
-    background-image:linear-gradient(90deg,#222463,#4145bc);
+    font-weight: 600;
+    font-size: 1.25rem;
+    background: linear-gradient(90deg, #ff7070, #ffe53c 51%, #ff9970) 0/200%;
     padding: 10px 20px;
     cursor: pointer;
     border: none;
-  }
+    transition: all 500ms ease;
+}
