@@ -23,11 +23,11 @@
             <input type="search" name="search" id="search" placeholder="Search...">
             <h1>Categories</h1>
             <ul class="categories">
-                <li class="category">all</li>
+                <!-- <li class="category">all</li>
                 <li class="category">casual</li>
                 <li class="category">dress</li>
                 <li class="category">sport</li>
-                <li class="category">luxury</li>
+                <li class="category">luxury</li> -->
             </ul>
             <h1>Maximum Price</h1>
             <input type="range" name="max-price" id="max-price">
@@ -38,6 +38,18 @@
         </section>
 
     </main>
+    <template data-product-card>
+        <div class="card">
+            <div class="card__img-container">
+                <img class="card__img" src="" alt="watch">
+            </div>
+            <div class="card__body">
+                <h2 class="card__name"></h2>
+                <p class="price"></p>
+            </div>
+        </div>
+    </template>
+
 </body>
 
 </html>
