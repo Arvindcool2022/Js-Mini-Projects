@@ -1,0 +1,123 @@
+[
+    {
+      "img": "https://m.media-amazon.com/images/I/61ybeKQto8L._UY445_.jpg",
+      "name": "Classic Silver Watch",
+      "price": "$99.99",
+      "category": "Casual"
+    },
+    {
+      "img": "https://m.media-amazon.com/images/I/71jAvJ1u5oL._UX425_.jpg",
+      "name": "Sporty Black Chronograph",
+      "price": "$149.99",
+      "category": "Sport"
+    },
+    {
+      "img": "https://m.media-amazon.com/images/I/71Dg1nOB75L._UX679_.jpg",
+      "name": "Elegant Rose Gold Timepiece",
+      "price": "$179.99",
+      "category": "Dress"
+    },
+    {
+      "img": "https://m.media-amazon.com/images/I/71EiZEpUhJS._UX425_.jpg",
+      "name": "Modern Stainless Steel Watch",
+      "price": "$129.99",
+      "category": "Casual"
+    },
+    {
+      "img": "https://m.media-amazon.com/images/I/61Nz0MOt48L._UX342_.jpg",
+      "name": "Luxury Leather Strap Watch",
+      "price": "$249.99",
+      "category": "Luxury"
+    },
+    {
+      "img": "https://m.media-amazon.com/images/I/61oyUU5o2vL._UX425_.jpg",
+      "name": "Vintage Wooden Dial Watch",
+      "price": "$89.99",
+      "category": "Casual"
+    },
+    {
+      "img": "https://m.media-amazon.com/images/I/61lxlvPisoL._UX342_.jpg",
+      "name": "Sleek Titanium Timepiece",
+      "price": "$199.99",
+      "category": "Dress"
+    },
+    {
+      "img": "https://m.media-amazon.com/images/I/81-mdcKMO8L._UX425_.jpg",
+      "name": "Bold Black and Gold Watch",
+      "price": "$169.99",
+      "category": "Casual"
+    },
+    {
+      "img": "https://m.media-amazon.com/images/I/714qli722TL._UX425_.jpg",
+      "name": "Minimalist White Face Watch",
+      "price": "$109.99",
+      "category": "Dress"
+    },
+    {
+      "img": "https://m.media-amazon.com/images/I/71duWpuObRL._UY445_.jpg",
+      "name": "Diamond-Studded Silver Watch",
+      "price": "$299.99",
+      "category": "Luxury"
+    },
+    {
+      "img": "https://m.media-amazon.com/images/I/71h1mgMqpDL._UX342_.jpg",
+      "name": "Rugged Outdoor Adventure Watch",
+      "price": "$139.99",
+      "category": "Sport"
+    },
+    {
+      "img": "https://m.media-amazon.com/images/I/61X+fQFUjOL._UX522_.jpg",
+      "name": "Chic Rose Gold Bracelet Watch",
+      "price": "$159.99",
+      "category": "Dress"
+    },
+    {
+      "img": "https://m.media-amazon.com/images/I/61DtbSrnXlL._UX342_.jpg",
+      "name": "Digital Sports Smartwatch",
+      "price": "$119.99",
+      "category": "Sport"
+    },
+    {
+      "img": "https://m.media-amazon.com/images/I/81h4j16XFML._UL1500_.jpg",
+      "name": "Aviator Pilot Chronograph",
+      "price": "$189.99",
+      "category": "Casual"
+    },
+    {
+      "img": "https://m.media-amazon.com/images/I/71zDcupiJhL._UL1500_.jpg",
+      "name": "Classic Brown Leather Watch",
+      "price": "$129.99",
+      "category": "Dress"
+    },
+    {
+      "img": "https://m.media-amazon.com/images/I/71159InOYoS._UL1500_.jpg",
+      "name": "Sleek Black Ceramic Watch",
+      "price": "$179.99",
+      "category": "Casual"
+    },
+    {
+      "img": "https://m.media-amazon.com/images/I/51++HdrkwzL.jpg",
+      "name": "Stylish Mesh Band Watch",
+      "price": "$149.99",
+      "category": "Dress"
+    },
+    {
+      "img": "https://m.media-amazon.com/images/I/51CaaIwiE8L._UL1000_.jpg",
+      "name": "Bold Blue Dial Timepiece",
+      "price": "$169.99",
+      "category": "Casual"
+    },
+    {
+      "img": "https://m.media-amazon.com/images/I/61FgktA7CnL._UL1500_.jpg",
+      "name": "Diving Sports Watch",
+      "price": "$199.99",
+      "category": "Sport"
+    },
+    {
+      "img": "https://m.media-amazon.com/images/I/91iSuQrrzqL._UL1500_.jpg",
+      "name": "Diamond-Encrusted Luxury Watch",
+      "price": "$499.99",
+      "category": "Luxury"
+    }
+  ]
+  

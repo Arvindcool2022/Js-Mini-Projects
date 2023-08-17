@@ -7,7 +7,6 @@ const play = document.querySelector('.play');
 const errormessage = document.querySelector('.error');
 
 let data;
-
 let quesNum = 0;
 let correctAns = 0;
 let wrongAns = 0;
@@ -32,8 +31,7 @@ function getData(object) {
 function askQuestions(qNumber) {
   selectedAns = null;
 
-  if (qNumber < 3) {
-    // console.log(data[qNumber]);
+  if (qNumber < data.length) {
     question.textContent = data[qNumber].question;
     answersContainer.innerHTML = data[qNumber].answers
       .map(
@@ -58,20 +56,6 @@ function selectAnswer() {
   );
 }
 
-function onSubmit() {
-  if (selectedAns !== null) {
-    errormessage.style.display = 'none';
-    console.log('before ', selectedAns, correctAns, wrongAns);
-    // selectedAns ? ++correctAns : ++wrongAns;
-    selectedAns === 'true' ? ++correctAns : ++wrongAns;
-    console.log('after ', selectedAns, correctAns, wrongAns);
-    ++quesNum;
-    askQuestions(quesNum);
-  } else {
-    errormessage.style.display = 'block';
-  }
-}
-
 function showResult() {
   gameScreen.style.display = 'none';
   resultScreen.style.display = 'block';
@@ -79,11 +63,27 @@ function showResult() {
   resultScreen.querySelector(
     '.correct'
   ).textContent = `Correct Answers: ${correctAns}`;
+
   resultScreen.querySelector(
     '.wrong'
   ).textContent = `Wrong Answers: ${wrongAns}`;
+
   total = wrongAns === 0 ? correctAns * 10 : correctAns * 10 - wrongAns * 5;
   resultScreen.querySelector('.score').textContent = `Score: ${total}`;
+}
+
+function onSubmit() {
+  if (selectedAns !== null) {
+    errormessage.style.display = 'none';
+    // console.log('before ', selectedAns, correctAns, wrongAns);
+    // selectedAns ? ++correctAns : ++wrongAns;
+    selectedAns === 'true' ? ++correctAns : ++wrongAns;
+    // console.log('after ', selectedAns, correctAns, wrongAns);
+    ++quesNum;
+    askQuestions(quesNum);
+  } else {
+    errormessage.style.display = 'block';
+  }
 }
 
 function playAgain() {
