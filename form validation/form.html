@@ -32,32 +32,36 @@
                 <form action="/form%20validation/formData.html" method="post">
                     <div class="input-grp">
                         <div class="flex">
-                            <label for="name">name <i class="bi bi-check-circle-fill valid-i"></i></label>
-                            <input type="text" placeholder="Fullname" id="name">
+                            <label for="name">name</label>
+                            <input type="text" placeholder="Fullname" name="name" id="name">
+                            <i class="bi bi-check-circle-fill valid-i"></i>
                         </div>
                         <p id="name-error"><i class="bi bi-exclamation-circle-fill"></i><small> name required</small>
                         </p>
                     </div>
                     <div class="input-grp">
                         <div class="flex">
-                            <label for="phone">phone <i class="bi bi-check-circle-fill valid-i"></i></label>
-                            <input type="number" placeholder="123 456 7890" id="phone" max="9999999999">
+                            <label for="phone">phone</label>
+                            <input type="number" placeholder="123 456 7890" id="phone" name="phone" max="9999999999">
+                            <i class="bi bi-check-circle-fill valid-i"></i>
                         </div>
-                        <p id="phone-error"><i class="bi bi-exclamation-circle-fill"></i><small> Phone no
+                        <p id="phone-error"><i class="bi bi-exclamation-circle-fill"></i><small> phone no
                                 required</small></p>
                     </div>
                     <div class="input-grp">
                         <div class="flex">
-                            <label for="email">email ID <i class="bi bi-check-circle-fill valid-i"></i></label>
-                            <input type="email" placeholder="sample@example.com" id="email">
+                            <label for="email">email ID</label>
+                            <input type="email" placeholder="sample@example.com" name="email" id="email">
+                            <i class="bi bi-check-circle-fill valid-i"></i>
                         </div>
                         <p id="email-error"><i class="bi bi-exclamation-circle-fill"></i><small> email required</small>
                         </p>
                     </div>
                     <div class="input-grp">
                         <div class="flex">
-                            <label for="password">enter password <i class="bi bi-check-circle-fill valid-i"></i></label>
-                            <input type="password" placeholder="" id="password">
+                            <label for="password">enter password</label>
+                            <input type="password" placeholder="" name="password" id="password">
+                            <i class="bi bi-check-circle-fill valid-i"></i>
                         </div>
                         <p id="password-error"><i class="bi bi-exclamation-circle-fill"></i><small> password must be at
                                 least 8 character</small></p>
@@ -66,7 +70,7 @@
                         <div class="flex">
                             <label for="password2">confirm password <i
                                     class="bi bi-check-circle-fill valid-i"></i></label>
-                            <input type="password" placeholder="" id="password2">
+                            <input type="password" placeholder="" name="confirm" id="password2">
                         </div>
                         <p id="confirmation-error"><i class="bi bi-exclamation-circle-fill"></i><small> password doesn't
                                 match</small></p>

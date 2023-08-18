@@ -89,8 +89,7 @@ body{
     visibility: hidden;
 }
 
-.input-grp label,
-.input-grp p {
+.input-grp label {
     text-transform: capitalize;
 }
 .input-grp input{
@@ -109,7 +108,7 @@ body{
 }
 
 .not-valid input {
-    border: 2px red solid;  
+    border-bottom: 1px red solid;  
     border-radius: 5px;
 }
 
@@ -118,7 +117,7 @@ body{
 }
 
 .valid input {
-    border: 2px green solid;   
+    border-bottom: 1px green solid;   
     border-radius: 5px;
 }
 
@@ -198,7 +197,7 @@ input[type=number] {
     }
 
     .wrapper {
-        background-color: rgba(255, 255, 255, 0.5);
+        background-color: rgba(255, 255, 255, 0.75);
         border-radius: 12px;
         padding: 1rem;
     }
@@ -209,6 +208,7 @@ input[type=number] {
 
     .input-grp p{
         font-size: 0.85rem;
+        font-weight: 500;
     }
     
 }
