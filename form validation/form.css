@@ -109,7 +109,6 @@ body{
 
 .not-valid input {
     border-bottom: 1px red solid;  
-    border-radius: 5px;
 }
 
 .not-valid p {
@@ -118,7 +117,6 @@ body{
 
 .valid input {
     border-bottom: 1px green solid;   
-    border-radius: 5px;
 }
 
 

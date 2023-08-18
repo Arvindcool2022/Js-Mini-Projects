@@ -1,4 +1,4 @@
-form validation
-touch slider in carousel
 calculator
+form validation key up eventListener
+touch slider in carousel
 cart and checkout in product page

@@ -2,6 +2,8 @@
 
 .Carousel {
     background-image:linear-gradient(125deg, #ff399f, #03b3c0) ;
+    background-repeat: no-repeat;
+    background-position: center;
     display: flex;
     align-items:center;
     justify-content: center;
@@ -70,3 +72,17 @@
     border: 1px solid #fff;
     transition: all 250ms ease-in;
 }
+/* 
+@media screen and (max-width:1000px) {
+    .chevron {
+        display: none;
+    }
+    .container {
+        margin: 0 auto;
+    }
+
+    .Carousel .frame {
+        width: 98vw;
+        aspect-ratio: 16/9;
+    }
+} */
