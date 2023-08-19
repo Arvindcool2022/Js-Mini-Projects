@@ -47,6 +47,12 @@ period.addEventListener('click', () => {
   updatePrimaryDisplay();
 });
 
+equalTo.addEventListener('click', () => {
+  primaryDisplay.textContent = eval(currentPrimaryDisplay);
+  currentPrimaryDisplay = '';
+  updateSecondaryDisplay('');
+});
+
 function appendOperator(data) {
   if (
     operatorPattern.test(data) &&
