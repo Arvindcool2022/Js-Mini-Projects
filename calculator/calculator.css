@@ -90,10 +90,22 @@ color: rgba(221, 221, 221, 0.65);
     background-color: hsl(216, 100%, 82%);
 }
 
+.none {
+    display: none;
+}
+.span2 {
+    grid-column:span 2;
+    aspect-ratio: 2/1;
+    border: 1px solid rgba(255, 255, 255, 0.075);;
+}
+
 @media screen and (max-width: 500px) {
     .app{
         width: 100vw;
         height: 100vh;
+        background-color: #111;
     }
-    
+    .keyboard{
+        flex-grow: 1;
+    }    
 }
