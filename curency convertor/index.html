@@ -10,23 +10,37 @@
 </head>
 
 <body>
-
-    <h1>Real Time Currency Converter</h1>
-    <form action="#">
-        <label for="from-currency">from</label>
-        <select name="from-currency" id="from-currency" class="currency">
-
-        </select>
-        <label for="to-currency">to</label>
-        <select name="to-currency" id="to-currency" class="currency">
-
-        </select>
-        <label for="amount">amount</label>
-        <input type="number" id="amount">
-        <input id="submit" type="submit">
-        <div class="currency-output"></div>
-    </form>
     <p id="err" style="display: none;"></p>
+    <section class="covertCurrency">
+        <h1>Real Time Currency Converter</h1>
+        <form action="#">
+            <label for="from-currency">Currency one</label>
+            <select name="from-currency" id="from-currency" class="currency">
+
+            </select>
+            <label for="to-currency">Currency two</label>
+            <select name="to-currency" id="to-currency" class="currency">
+
+            </select>
+            <label for="amount">Amount</label>
+            <input type="number" id="amount">
+            <input id="submit" type="submit">
+            <div class="currency-output"></div>
+        </form>
+    </section>
+    <section>
+        <h1>Find currency</h1>
+        <form action="#">
+            <label for="country">Country name</label>
+            <select name="country" id="country" class="country">
+                <option>--select--</option>`
+            </select>
+            <br><br>
+            <div class="currency-output2"></div>
+        </form>
+    </section>
+
+
 
 
 </body>
