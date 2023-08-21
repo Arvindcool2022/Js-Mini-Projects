@@ -16,12 +16,11 @@ submitButton.addEventListener('click', getRates);
   //     showData(key + ' => ' + currencyValue[key]);
   //   }
 
-  //   for (const obj of countries) {
-  //     showData(obj.name.common);
-  //   }
+  for (const obj of countries) {
+    showData(obj);
+  }
 
   showDropdown(Object.keys(currencyValue));
-  console.log(currencyValue);
 })();
 
 async function getData(...urls) {
@@ -45,7 +44,9 @@ async function fetchData(url) {
     }
     return await response.json();
   } catch (error) {
-    console.error(`Network error: ${error}`);
+    let err = document.getElementById('err');
+    err.setAttribute('style', 'display:block;');
+    err.innerHTML = `Network error: ${error}`;
     return null;
   }
 }
