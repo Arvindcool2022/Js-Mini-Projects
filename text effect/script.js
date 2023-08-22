@@ -48,7 +48,7 @@
   };
 
   //# for running all the time
-  alwaysSparkle();
+  // alwaysSparkle();
 
   function alwaysSparkle() {
     for (const star of stars) {
@@ -60,7 +60,7 @@
     }
   }
   //# for hover effect only
-  // sparkleOnlyOnHover();
+  sparkleOnlyOnHover();
 
   function sparkleOnlyOnHover() {
     let timeouts = [];
@@ -69,7 +69,7 @@
     const container = document.querySelector('.magic');
 
     const startAnimation = () => {
-      let index = 1;
+      let index = 0;
 
       for (const star of stars) {
         timeouts.push(
