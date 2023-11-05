@@ -12,6 +12,27 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
+    @font-face {
+      font-family: "ubuntu";
+      src: url("./public/fonts/Ubuntu-Bold.ttf") format("truetype");
+      font-weight: bold;
+    }
+
+    @font-face {
+      font-family: "ubuntu";
+      src: url("./public/fonts/Ubuntu-Medium.ttf") format("truetype");
+      font-weight: 500;
+      /* 500 is the CSS value for medium font weight */
+    }
+
+    @font-face {
+      font-family: "ubuntu";
+      src: url("./public/fonts/Ubuntu-Regular.ttf") format("truetype");
+      font-weight: normal;
+      /* Use "normal" for regular font weight */
+    }
+
+
     .attribution {
       font-size: 11px;
       text-align: center;
@@ -24,7 +45,7 @@
     body {
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
+      font-family: 'ubuntu';
     }
   </style>
 </head>
