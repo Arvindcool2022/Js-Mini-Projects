@@ -1,8 +1,80 @@
 .info {
-  .card {
-    margin-block: 1rem;
-    padding: 1rem;
-    border: solid 1px black;
-    cursor: pointer;
+  color: var(--Marine-blue);
+  p {
+    margin: 0;
+  }
+  h1 {
+    font-size: 2.5rem;
+    margin-block-start: 1.5rem;
+    margin-block-end: 1rem;
+  }
+  .subtitle {
+    color: var(--Cool-gray);
+  }
+  .plans {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    margin-block: 2.5rem;
+    .card {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      border: 1px solid var(--Light-gray);
+      padding: 1rem;
+      border-radius: 10px;
+      gap: 0.5rem;
+      cursor: pointer;
+      .name {
+        text-transform: capitalize;
+        margin-block-start: 3rem;
+        font-weight: 500;
+      }
+      .price {
+        color: var(--Cool-gray);
+      }
+      .year {
+        font-size: 0.85rem;
+      }
+    }
+
+    .card:hover {
+      border-color: var(--Marine-blue);
+    }
+  }
+
+  .toggleDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    background-color: var(--Alabaster);
+    padding-block: 1rem;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 0.9rem;
+  }
+  .buttonGrp {
+    display: flex;
+    justify-content: space-between;
+    margin-block-start: 5rem;
+
+    .link {
+      background-color: transparent;
+      color: var(--Cool-gray);
+    }
+    .link:hover {
+      color: var(--Marine-blue);
+    }
+    .btn {
+      color: var(--Light-gray);
+      border-radius: 5px;
+      background-color: var(--Marine-blue);
+    }
+    .btn:hover,
+    .btn:active,
+    .btn:focus {
+      background-color: var(--Purplish-blue);
+    }
   }
 }

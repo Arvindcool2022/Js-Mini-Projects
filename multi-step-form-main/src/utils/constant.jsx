@@ -1,13 +1,18 @@
+import { IconAdvanced, IconArcade, IconPro } from '../components/ReactSvg';
+
 const PLANS = [
   {
+    icon: [<IconArcade />],
     name: 'arcade',
     price: 9
   },
   {
+    icon: [<IconAdvanced />],
     name: 'advanced',
     price: 12
   },
   {
+    icon: [<IconPro />],
     name: 'pro',
     price: 15
   }

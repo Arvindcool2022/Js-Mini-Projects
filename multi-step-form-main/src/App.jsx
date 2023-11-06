@@ -14,7 +14,7 @@ import { ADD_ON } from './utils/constant';
 function App() {
   const [step, setStep] = useState(1);
   const [isYearly, setIsYearly] = useState(false);
-  const [plan, setPlan] = useState('');
+  const [plan, setPlan] = useState('arcade');
   const initialAddOns = {};
   ADD_ON.forEach(addon => {
     initialAddOns[addon.name] = false;

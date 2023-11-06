@@ -10,42 +10,61 @@ const SelectPlan = () => {
   console.log(plan);
   return (
     <div className={styles.info}>
-      <Toggle
-        backgroundColorChecked={'red'}
-        backgroundColorUnchecked={'red'}
-        checked={isYearly}
-        onChange={() => {
-          setIsYearly(p => !p);
-        }}
-      />
-      <p>plan</p>
-      {PLANS.map(x =>
-        x.name !== plan ? (
-          <div onClick={() => setPlan(x.name)} className={styles.card}>
-            <p>{x.name}</p>
-            <p>{isYearly ? x.price * 10 : x.price}</p>
-            {isYearly && <p>free</p>}
-          </div>
-        ) : (
+      <h1>Select your plan</h1>
+      <p className={styles.subtitle}>
+        You have the option of monthly or yearly billing.
+      </p>
+      <div className={styles.plans}>
+        {PLANS.map(item => (
           <div
+            onClick={() => {
+              if (item.name !== plan) setPlan(item.name);
+            }}
             className={styles.card}
-            style={{ borderColor: 'red', cursor: 'auto' }}
+            style={
+              item.name === plan
+                ? {
+                    borderColor: 'var(--Marine-blue)',
+                    backgroundColor: 'var(--Alabaster)',
+                    cursor: 'auto'
+                  }
+                : {}
+            }
           >
-            <p>{x.name}</p>
-            <p>{isYearly ? x.price * 10 : x.price}</p>
-            {isYearly && <p>free</p>}
+            {...item.icon}
+            <p className={styles.name}>{item.name}</p>
+            <p className={styles.price}>
+              {isYearly ? `$${item.price * 10}/yr` : `$${item.price}/mo`}
+            </p>
+            {isYearly && <p className={styles.year}>2 months free</p>}
           </div>
-        )
-      )}
-      <button onClick={() => setStep(1)}>Go back</button>
-      <button
-        onClick={() => {
-          if (plan) setStep(3);
-          else console.log('select a plan');
-        }}
-      >
-        next
-      </button>
+        ))}
+      </div>
+      <div className={styles.toggleDiv}>
+        <p style={!isYearly ? {} : { color: 'hsl(228, 100%, 84%)' }}>Monthly</p>
+        <Toggle
+          backgroundColorChecked={'hsl(213, 96%, 18%)'}
+          backgroundColorUnchecked={'hsl(213, 96%, 18%)'}
+          checked={isYearly}
+          height={24}
+          width={48}
+          sliderHeight={16}
+          sliderWidth={16}
+          translate={22}
+          onChange={() => {
+            setIsYearly(p => !p);
+          }}
+        />
+        <p style={isYearly ? {} : { color: 'hsl(228, 100%, 84%)' }}>Yearly</p>
+      </div>
+      <div className={styles.buttonGrp}>
+        <button className={styles.link} onClick={() => setStep(1)}>
+          Go Back
+        </button>
+        <button className={styles.btn} onClick={() => setStep(3)}>
+          Next Step
+        </button>
+      </div>
     </div>
   );
 };
