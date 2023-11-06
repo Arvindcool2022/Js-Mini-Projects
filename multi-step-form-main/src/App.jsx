@@ -21,7 +21,6 @@ function App() {
   });
 
   const [addOn, setAddOn] = useState(initialAddOns);
-  console.log(addOn);
 
   return (
     <AppContext.Provider
@@ -39,12 +38,14 @@ function App() {
       <main className={styles.main}>
         <section className={styles.wrapper}>
           <Navigation />
-          <div>
-            {step === 1 && <YourInfo />}
-            {step === 2 && <SelectPlan />}
-            {step === 3 && <AddOnServices />}
-            {step === 4 && <Summary />}
-            {step === 5 && <ThankYou />}
+          <div className={styles.field}>
+            <div className={styles.container}>
+              {step === 1 && <YourInfo />}
+              {step === 2 && <SelectPlan />}
+              {step === 3 && <AddOnServices />}
+              {step === 4 && <Summary />}
+              {step === 5 && <ThankYou />}
+            </div>
           </div>
         </section>
       </main>

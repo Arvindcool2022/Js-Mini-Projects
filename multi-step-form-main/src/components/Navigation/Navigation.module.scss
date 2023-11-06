@@ -8,16 +8,16 @@
   .container {
     position: absolute;
     top: 5%;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 10%;
 
     .step {
       display: flex;
       align-items: center;
       gap: 1.5rem;
-      color: white;
+      color: var(--White);
       margin-block-end: 2rem;
       text-transform: capitalize;
+      font-weight: 500;
       p {
         margin: 0;
       }
@@ -28,7 +28,7 @@
         align-items: center;
         gap: 2rem;
         justify-content: center;
-        border: 1px solid white;
+        border: 1px solid var(--Pastel-blue);
         border-radius: 999px;
       }
       .numMark {
@@ -38,12 +38,22 @@
         align-items: center;
         gap: 2rem;
         justify-content: center;
-        border: 1px solid white;
+        border: 1px solid var(--Pastel-blue);
         border-radius: 999px;
-        background: white;
-        color: black;
+        background: var(--Pastel-blue);
+        color: var(--Marine-blue);
       }
       .name {
+        p {
+          color: var(--Pastel-blue);
+          font-weight: 300;
+          text-transform: uppercase;
+        }
+        .page {
+          font-weight: bold;
+          letter-spacing: 0.05em;
+          color: var(--White);
+        }
       }
     }
   }

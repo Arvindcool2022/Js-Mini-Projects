@@ -7,7 +7,6 @@ const steps = ['your info', 'Select plan', 'Add-ons', 'Summary'];
 const Navigation = () => {
   const { step } = useContext(AppContext);
   const stage = step - 1;
-  console.log(stage);
   return (
     <div className={styles.Navigation}>
       <div className={styles.desktopImg}>
@@ -26,7 +25,7 @@ const Navigation = () => {
             )}
             <div className={styles.name}>
               <p>{`Step ${index + 1}`}</p>
-              <p>{step}</p>
+              <p className={styles.page}>{step}</p>
             </div>
           </div>
         ))}
