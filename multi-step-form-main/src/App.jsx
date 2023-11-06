@@ -3,26 +3,46 @@ import { AppContext } from './utils/StepContext';
 import styles from './App.module.scss';
 import {
   YourInfo,
-  AddOns,
   SelectPlan,
+  AddOnServices,
   Summary,
   ThankYou,
   Navigation
 } from './components';
+import { ADD_ON } from './utils/constant';
 
 function App() {
   const [step, setStep] = useState(1);
   const [isYearly, setIsYearly] = useState(false);
+  const [plan, setPlan] = useState('');
+  const initialAddOns = {};
+  ADD_ON.forEach(addon => {
+    initialAddOns[addon.name] = false;
+  });
+
+  const [addOn, setAddOn] = useState(initialAddOns);
+  console.log(addOn);
 
   return (
-    <AppContext.Provider value={{ setStep, isYearly, setIsYearly }}>
+    <AppContext.Provider
+      value={{
+        step,
+        setStep,
+        isYearly,
+        setIsYearly,
+        plan,
+        setPlan,
+        setAddOn,
+        addOn
+      }}
+    >
       <main className={styles.main}>
         <section className={styles.wrapper}>
           <Navigation />
           <div>
             {step === 1 && <YourInfo />}
-            {step === 2 && <AddOns />}
-            {step === 3 && <SelectPlan />}
+            {step === 2 && <SelectPlan />}
+            {step === 3 && <AddOnServices />}
             {step === 4 && <Summary />}
             {step === 5 && <ThankYou />}
           </div>

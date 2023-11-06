@@ -31,6 +31,18 @@
         border: 1px solid white;
         border-radius: 999px;
       }
+      .numMark {
+        height: 2rem;
+        width: 2rem;
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        justify-content: center;
+        border: 1px solid white;
+        border-radius: 999px;
+        background: white;
+        color: black;
+      }
       .name {
       }
     }
