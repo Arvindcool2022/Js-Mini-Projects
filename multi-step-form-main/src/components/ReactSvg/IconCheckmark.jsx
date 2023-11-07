@@ -1,4 +1,4 @@
-const IconCheckmark = () => {
+const IconCheckmark = prop => {
   return (
     <>
       <svg

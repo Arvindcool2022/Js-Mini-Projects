@@ -2,6 +2,7 @@ import { AppContext } from '../../utils/StepContext';
 import { useContext } from 'react';
 import styles from './AddOnServices.module.scss';
 import { ADD_ON } from '../../utils/constant';
+import { IconCheckmark } from '../ReactSvg';
 
 const AddOnServices = () => {
   const { setStep, isYearly, addOn, setAddOn } = useContext(AppContext);
@@ -9,7 +10,8 @@ const AddOnServices = () => {
   // console.log(addOn);
 
   return (
-    <div className={styles}>
+    <div className={styles.section}>
+      <IconCheckmark />
       {ADD_ON.map(x => (
         <div key={x.name}>
           <input
