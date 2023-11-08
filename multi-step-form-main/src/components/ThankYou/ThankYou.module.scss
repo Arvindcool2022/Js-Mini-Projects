@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+
+  color: var(--Marine-blue);
+  p {
+    color: var(--Cool-gray);
+    max-width: 525px;
+  }
+  h1 {
+    font-size: 2rem;
+    margin-block-start: 2rem;
+    margin-block-end: 0.5rem;
+  }
+  .subtitle {
+  }
+}

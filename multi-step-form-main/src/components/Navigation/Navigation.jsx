@@ -7,6 +7,7 @@ const steps = ['your info', 'Select plan', 'Add-ons', 'Summary'];
 const Navigation = () => {
   const { step } = useContext(AppContext);
   const stage = step - 1;
+
   return (
     <div className={styles.Navigation}>
       <div className={styles.desktopImg}>
@@ -19,6 +20,8 @@ const Navigation = () => {
         {steps.map((step, index) => (
           <div key={step} className={styles.step}>
             {stage === index ? (
+              <p className={styles.numMark}>{index + 1}</p>
+            ) : stage === 4 && index === 3 ? (
               <p className={styles.numMark}>{index + 1}</p>
             ) : (
               <p className={styles.num}>{index + 1}</p>
