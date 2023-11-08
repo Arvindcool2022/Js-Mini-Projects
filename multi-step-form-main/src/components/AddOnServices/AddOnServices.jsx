@@ -6,9 +6,6 @@ import { IconCheckmark } from '../ReactSvg';
 
 const AddOnServices = () => {
   const { setStep, isYearly, addOn, setAddOn } = useContext(AppContext);
-
-  console.log(addOn);
-
   return (
     <div className={styles.section}>
       <h1>Pick add-ons</h1>
@@ -16,22 +13,34 @@ const AddOnServices = () => {
         Add-ons help enhance your gaming experience.
       </p>
       {ADD_ON.map(x => (
-        <div key={x.name} className={styles.services}>
+        <div
+          key={x.name}
+          className={styles.services}
+          onClick={() => {
+            setAddOn(prevAddOn => ({
+              ...prevAddOn,
+              [x.name]: !prevAddOn[x.name]
+            }));
+          }}
+          style={
+            addOn[x.name]
+              ? {
+                  borderColor: 'var(--Purplish-blue)',
+                  backgroundColor: 'var(--Alabaster)'
+                }
+              : {}
+          }
+        >
           <input
             type="checkbox"
             id={x.name}
             name={x.name}
             value={x.name}
             checked={addOn[x.name] || false}
-            onChange={() => {
-              setAddOn(prevAddOn => ({
-                ...prevAddOn,
-                [x.name]: !prevAddOn[x.name]
-              }));
-            }}
+            onChange={e => e.stopPropagation()}
           />
           <div className={styles.name}>
-            <label for={`#${x.name}`}>{x.name}</label>
+            <label htmlFor={`#${x.name}`}>{x.name}</label>
             <p>{x.des}</p>
           </div>
           <p className={styles.price}>

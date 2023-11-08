@@ -7,7 +7,6 @@ import { PLANS } from '../../utils/constant';
 const SelectPlan = () => {
   const { setStep, isYearly, setIsYearly, plan, setPlan } =
     useContext(AppContext);
-  console.log(plan);
   return (
     <div className={styles.info}>
       <h1>Select your plan</h1>
