@@ -5,6 +5,7 @@ import IconArcade from './IconArcade';
 import IconCheckmark from './IconCheckmark';
 import IconPro from './IconPro';
 import IconThankYou from './IconThankYou';
+import SVG from './icon-checkmark.svg';
 
 export {
   BgSidebarDesktop,
@@ -13,5 +14,6 @@ export {
   IconAdvanced,
   IconCheckmark,
   IconPro,
-  IconThankYou
+  IconThankYou,
+  SVG
 };

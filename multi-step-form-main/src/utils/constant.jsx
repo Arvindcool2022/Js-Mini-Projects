@@ -11,7 +11,7 @@ const PLANS = [
     name: 'advanced',
     price: 12
   },
-  {
+  { 
     icon: [<IconPro />],
     name: 'pro',
     price: 15

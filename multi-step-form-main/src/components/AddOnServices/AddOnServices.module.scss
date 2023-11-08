@@ -1,0 +1,88 @@
+.section {
+  color: var(--Marine-blue);
+  p {
+    margin: 0;
+  }
+  h1 {
+    font-size: 2.25rem;
+    margin-block-start: 1.5rem;
+    margin-block-end: 0.5rem;
+  }
+  .subtitle {
+    color: var(--Cool-gray);
+  }
+
+  .services {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--Light-gray);
+    margin-block: 1.5rem;
+    width: 100%;
+    padding-block: 1rem;
+    border-radius: 12px;
+    cursor: pointer;
+
+    * {
+      cursor: pointer;
+    }
+
+    input {
+      margin: 1rem;
+      transform: scale(1.5);
+    }
+
+    input:checked {
+      background-color: var(--Purplish-blue); // not working
+    }
+
+    .name {
+      flex: 5;
+
+      label {
+        font-weight: 500;
+      }
+
+      p {
+        margin-block-start: 0.25rem;
+        color: var(--Cool-gray);
+      }
+      p::first-letter {
+        text-transform: uppercase;
+      }
+    }
+
+    .name::first-letter {
+      text-transform: uppercase;
+    }
+    .price {
+      flex: 1;
+    }
+  }
+  .services:hover {
+    border-color: var(--Purplish-blue);
+  }
+
+  .buttonGrp {
+    display: flex;
+    justify-content: space-between;
+    margin-block-start: 5rem;
+
+    .link {
+      background-color: transparent;
+      color: var(--Cool-gray);
+    }
+    .link:hover {
+      color: var(--Marine-blue);
+    }
+    .btn {
+      color: var(--Light-gray);
+      border-radius: 5px;
+      background-color: var(--Marine-blue);
+    }
+    .btn:hover,
+    .btn:active,
+    .btn:focus {
+      background-color: var(--Purplish-blue);
+    }
+  }
+}

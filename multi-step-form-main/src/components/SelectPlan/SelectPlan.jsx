@@ -24,7 +24,7 @@ const SelectPlan = () => {
             style={
               item.name === plan
                 ? {
-                    borderColor: 'var(--Marine-blue)',
+                    borderColor: 'var(--Purplish-blue)',
                     backgroundColor: 'var(--Alabaster)',
                     cursor: 'auto'
                   }
